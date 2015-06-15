@@ -4,9 +4,6 @@
 res1=$(date +%s.%N)
 
 sed -i -e 's/ezio84/diegocr/g' vendor/slim/config/common.mk
-echo
-echo "patch media codecs"
-patch -N -p1 <device/samsung/chagallwifi/patches/OMX-google-ffmpeg.diff
 
 export IS_RELEASED_BUILD=true
 export USE_CCACHE=1
