@@ -1,8 +1,4 @@
 #!/bin/bash
-
-# Time of build startup
-res1=$(date +%s.%N)
-
 sed -i -e 's/ezio84/diegocr/g' vendor/slim/config/common.mk
 
 export IS_RELEASED_BUILD=true
@@ -16,11 +12,6 @@ echo building
 
 mv ./out/target/product/chagallwifi/Slim.diegocr* ./1SlimLP
 
-# Get elapsed time
-echo
-res2=$(date +%s.%N)
-echo "${bldgrn}Total time elapsed: ${txtrst}${grn}$(echo "($res2 - $res1) / 60"|bc ) minutes ($(echo "$res2 - $res1"|bc ) seconds) ${txtrst}"
-echo
 
 
 
