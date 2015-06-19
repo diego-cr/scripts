@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	
-  <!-- BLOBS for chagallwifi -->
-  <project name="diego-cr/android_vendor_samsung_chagallwifi.git" path="vendor/samsung/chagallwifi" remote="github" revision="lp5.1" />
-  <project name="diego-cr/android_device_samsung_chagallwifi.git" path="device/samsung/chagallwifi" remote="github" revision="lp5.1" />
-  <project name="diego-cr/android_kernel_samsung_chagallwifi.git" path="kernel/samsung/chagallwifi" remote="github" revision="lp5.1" /> 
+
+  <!-- BLOBS for chagallwifi  -->
+    <project name="diego-cr/android_vendor_samsung_chagallwifi.git" path="vendor/samsung/chagallwifi" remote="github" revision="lp5.1" />
+    <project name="diego-cr/android_device_samsung_chagallwifi.git" path="device/samsung/chagallwifi" remote="github" revision="lp5.1" />
+
+   <project name="LiquidSmooth-Devices/android_kernel_samsung_klimtwifi.git" path="kernel/samsung/klimtwifi" remote="github" revision="5.1" />
+<!--  <project name="LiquidSmooth-Devices/android_device_samsung_chagallwifi.git" path="device/samsung/chagallwifi" remote="github" revision="5.1" /> -->
 
   <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="lp5.1" />
+<!--  <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-12.1" /> -->
 
   <remove-project path="hardware/samsung_slsi/exynos5" name="SlimRoms/hardware_samsung_slsi_exynos5" />
   <project name="CyanogenMod/android_hardware_samsung_slsi_exynos" path="hardware/samsung_slsi/exynos" remote="github" revision="cm-12.1" />
