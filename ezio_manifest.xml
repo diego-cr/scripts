@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	
   <!-- Scripts to automate the building process and some backups -->
   <project path="scripts" name="ezio84/scripts" remote="github" revision="lp5.1" />
-        
   <!--Switch to my forked projects (only needed ones, for customizations or translations) -->
   <remove-project path="frameworks/base" name="SlimRoms/frameworks_base" />
   <project path="frameworks/base" name="ezio84/frameworks_base" remote="github" revision="lp5.1" />
@@ -49,9 +47,14 @@
   <project path="bionic" name="ezio84/android_bionic" remote="github" revision="lp5.1" />
   <remove-project path="packages/apps/DeskClock" name="SlimRoms/packages_apps_DeskClock" />
   <project path="packages/apps/DeskClock" name="ezio84/packages_apps_DeskClock" remote="github" revision="lp5.1" />
-  <remove-project path="cards" name="SlimRoms/frameworks_opt_cards" />
+  <remove-project path="frameworks/opt/cards" name="SlimRoms/frameworks_opt_cards" />
   <project path="frameworks/opt/cards" name="ezio84/frameworks_opt_cards" remote="github" revision="lp5.1" />
-  <!-- <remove-project path="frameworks/opt/hardware" name="SlimRoms/frameworks_opt_hardware" /> -->
+  <remove-project path="external/bluetooth/bluedroid" name="SlimRoms/android_external_bluetooth_bluedroid" />
+  <project path="external/bluetooth/bluedroid" name="ezio84/android_external_bluetooth_bluedroid" remote="github" revision="lp5.1" />
+  <remove-project path="external/stagefright-plugins" name="SlimRoms/android_external_stagefright-plugins" />
+  <project path="external/stagefright-plugins" name="ezio84/android_external_stagefright-plugins" remote="github" revision="lp5.1" />
+  <remove-project path="frameworks/native" name="SlimRoms/frameworks_native" />
+  <project path="frameworks/native" name="ezio84/frameworks_native" remote="github" revision="lp5.1" />
   <!-- Screen recorder by ChamaleonOS-->
   <project path="packages/apps/ScreenRecorder" name="ezio84/android_packages_apps_ScreenRecorder" remote="github" revision="lp5.1" />
   <!-- Switch from old DSP Manager to AudioFX and Eleven music player by CyanogenMod -->
@@ -74,7 +77,7 @@
   <!-- Blow shit up!! (Schwarznegger cit) and let the user install apps from playstore if needed -->
   <remove-project path="packages/apps/Browser" name="SlimRoms/packages_apps_Browser" />
   <remove-project path="packages/apps/Calendar" name="SlimRoms/packages_apps_Calendar" />
-  <!-- <remove-project path="packages/apps/Camera2" name="SlimRoms/packages_apps_Camera2" /> -->
+  <remove-project path="packages/apps/Camera2" name="SlimRoms/packages_apps_Camera2" />
   <remove-project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" />
   <remove-project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" />
   <remove-project name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic" />
@@ -84,6 +87,5 @@
   <remove-project name="platform/packages/wallpapers/MusicVisualization" path="packages/wallpapers/MusicVisualization" />
   <remove-project name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField" />
   <remove-project name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam" />
-  <remove-project path="packages/apps/Mms" name="SlimRoms/packages_apps_Mms" />
   <!--  NOW REMOVED FROM SLIM MANIFEST TOO: <remove-project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" /> -->
 </manifest>
